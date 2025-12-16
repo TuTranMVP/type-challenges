@@ -1,0 +1,8 @@
+<!--info-header-start--><h1>Length of String 3 <img src="https://img.shields.io/badge/-hard-de3d37" alt="khó"/> </h1><blockquote><p>bởi Eosellmay Li <a href="https://github.com/E0SelmY4V" target="_blank">@E0SelmY4V</a></p></blockquote><p><a href="https://tsch.js.org/31824/play" target="_blank"><img src="https://img.shields.io/badge/-Take%20the%20Challenge-3178c6?logo=typescript&logoColor=white" alt="Bắt đầu Challenge"/></a> </p><!--info-header-end-->
+
+Triển khai a type `LengthOfString<S>` just like `Array#length`:
+
+Differing to two previous challenges about strings' length, this times the type must support strings about $10^6$ characters long, which makes it more challenging.
+
+
+<!--info-footer-start--><br><a href="../../README.md" target="_blank"><img src="https://img.shields.io/badge/-Quay lại-grey" alt="Quay lại"/></a> <a href="https://tsch.js.org/31824/answer" target="_blank"><img src="https://img.shields.io/badge/-Share%20your%20Solutions-teal" alt="Chia sẻ Lời giải"/></a> <a href="https://tsch.js.org/31824/solutions" target="_blank"><img src="https://img.shields.io/badge/-Check%20out%20Solutions-de5a77?logo=awesome-lists&logoColor=white" alt="Xem các Lời giải"/></a> <hr><h3>Challenges liên quan</h3><a href="https://github.com/type-challenges/type-challenges/blob/main/questions/00298-medium-length-of-string/README.md" target="_blank"><img src="https://img.shields.io/badge/-298%E3%83%BBLength%20of%20String-d9901a" alt="298・Length of String"/></a> <!--info-footer-end-->
