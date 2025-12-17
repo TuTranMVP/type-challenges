@@ -1,16 +1,16 @@
 {
   "compilerOptions": {
-    "target": "es2017",
-    "lib": ["ESNext"],
-    "module": "esnext",
-    "moduleResolution": "node",
-    "allowJs": true,
-    "strict": true,
-    "noImplicitReturns": true,
-    "noUnusedLocals": false,
-    "noUnusedParameters": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true
+    "target": "es2017", // Modern JavaScript features
+    "lib": ["ESNext"], // Use the latest ECMAScript features
+    "module": "esnext", // Use ESNext module system
+    "moduleResolution": "node", // Node.js module resolution
+    "allowJs": true, // Allow JavaScript files to be compiled
+    "strict": true, // Enable all strict type-checking options
+    "noImplicitReturns": true, // Report error on functions that do not return a value
+    "noUnusedLocals": false, // Do not report unused local variables
+    "noUnusedParameters": true, // Report unused function parameters
+    "esModuleInterop": true, // Enable interoperability between CommonJS and ES Modules
+    "skipLibCheck": true // Skip type checking of declaration files
   },
   "exclude": ["node_modules", "dist"]
 }

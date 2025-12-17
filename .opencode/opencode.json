@@ -1,0 +1,71 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+
+  "mcp": {
+    "context7": {
+      "type": "remote",
+      "url": "https://mcp.context7.com/mcp",
+      "headers": {
+        "OpenCode": "ctx7sk-aa1ee1bb-88d7-4b8d-aaac-b8e7296375df"
+      },
+      "enabled": true
+    },
+
+    "sequential-thinking": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
+      "enabled": true
+    }
+  },
+
+  "command": {
+    "solve": {
+      "description": "Giải TypeScript type challenge với Vietnamese solution",
+      "template": "Giải challenge {{args}} theo workflow: 1) Load context từ questions/{ID}/README.vi.md + test-cases.ts, 2) Phân tích patterns, 3) Generate solution, 4) Verify test cases, 5) Tạo SOLUTION.vi.md với giải thích step-by-step bằng tiếng Việt. Reference @FAQ.vi.md và @TIPS.vi.md khi cần.",
+      "agent": "coder",
+      "subtask": true,
+      "model": "anthropic/claude-opus-4-1-20250805"
+    },
+
+    "explain": {
+      "description": "Giải thích TypeScript concept (Socratic method)",
+      "template": "Giải thích concept {{args}} bằng tiếng Việt sử dụng Socratic method: 1) Search @FAQ.vi.md và @TIPS.vi.md, 2) Mental model (Type System = Functional Programming), 3) Examples từ simple → complex, 4) Mini exercises, 5) Checkpoint. Giữ keywords tiếng Anh (keyof, infer, extends, mapped types...).",
+      "agent": "tutor",
+      "model": "anthropic/claude-opus-4-1-20250805"
+    },
+
+    "track": {
+      "description": "Track tiến độ và recommend next challenge",
+      "template": "Phân tích tiến độ: 1) Count completed challenges trong playground/*, 2) Analyze git history, 3) Tính metrics (completion rate, streak), 4) Recommend challenge tiếp theo dựa trên difficulty, 5) Update progress tracker. Reference @SOLUTIONS-INDEX.md.",
+      "agent": "coder",
+      "subtask": false
+    },
+
+    "review": {
+      "description": "Review solution code quality và best practices",
+      "template": "Review solution {{args}}: 1) Analyze code quality (type safety, readability), 2) Check patterns từ @TIPS.vi.md, 3) Identify improvements (performance, edge cases), 4) Suggest alternatives, 5) Rate difficulty. Output bằng tiếng Việt với actionable feedback.",
+      "agent": "coder",
+      "subtask": true,
+      "model": "anthropic/claude-opus-4-1-20250805"
+    },
+
+    "quiz": {
+      "description": "Generate practice quiz từ concepts đã học",
+      "template": "Tạo quiz cho {{args}}: 1) Extract core patterns từ solved challenges, 2) Generate variations (similar but different), 3) Create test cases (multiple difficulty levels), 4) Format interactive quiz, 5) Include solutions với explanations tiếng Việt. Reference @TIPS.vi.md (Tip 11-15).",
+      "agent": "coder",
+      "subtask": true
+    },
+
+    "generate": {
+      "description": "Generate Vietnamese docs cho challenge",
+      "template": "Generate docs tiếng Việt cho challenge {{args}}: 1) Load English từ questions/{ID}/README.md, 2) Dịch sang tiếng Việt (giữ technical keywords), 3) Thêm Việt examples và analogies, 4) Create step-by-step solution, 5) Format theo style hiện tại của .vi.md files. Output: README.vi.md + SOLUTION.vi.md.",
+      "agent": "coder",
+      "subtask": true,
+      "model": "anthropic/claude-opus-4-1-20250805"
+    }
+  }
+}

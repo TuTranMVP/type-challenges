@@ -137,7 +137,7 @@ const action: Action = async (github, context, core) => {
       [`${dir}/test-cases.ts`]: `${tests}\n`,
     }
 
-    await PushCommit(github, {
+    await PushCommit(github as any, {
       owner: context.repo.owner,
       repo: context.repo.repo,
       base: 'main',
