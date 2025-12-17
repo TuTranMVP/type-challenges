@@ -4,13 +4,13 @@
     "lib": ["ESNext"], // Use the latest ECMAScript features
     "module": "esnext", // Use ESNext module system
     "moduleResolution": "node", // Node.js module resolution
-    "allowJs": true, // Allow JavaScript files to be compiled
+    "allowJs": true, // Cho phép biên dịch các tệp JavaScript
     "strict": true, // Enable all strict type-checking options
-    "noImplicitReturns": true, // Report error on functions that do not return a value
-    "noUnusedLocals": false, // Do not report unused local variables
-    "noUnusedParameters": true, // Report unused function parameters
-    "esModuleInterop": true, // Enable interoperability between CommonJS and ES Modules
-    "skipLibCheck": true // Skip type checking of declaration files
+    "noImplicitReturns": true, // Report lỗi trên các hàm không trả về giá trị
+    "noUnusedLocals": false, // Không báo cáo các biến cục bộ không được sử dụng
+    "noUnusedParameters": true, // Report tham số chức năng không sử dụng
+    "esModuleInterop": true, // Enable Khả năng tương tác between CommonJS and ES Modules
+    "skipLibCheck": true // Bỏ qua việc kiểm tra kiểu file khai báo
   },
   "exclude": ["node_modules", "dist"]
 }
