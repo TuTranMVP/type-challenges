@@ -38,7 +38,6 @@ type-challenges/
     ├── README.vi.md         Quick start guide
     ├── FAQ.vi.md            25 Q&A
     ├── TIPS.vi.md           25 advanced tips
-    └── SOLUTIONS-INDEX.md   189 solutions index
 ```
 
 ---
@@ -95,8 +94,6 @@ type-challenges/
 5. Update: Progress tracker file
 
 **Output:** Metrics + Personalized recommendations
-
-**Reference:** @SOLUTIONS-INDEX.md
 
 ---
 
@@ -187,7 +184,6 @@ type-challenges/
 | `README.vi.md` | Quick start, setup guide | 394 |
 | `FAQ.vi.md` | 25 câu hỏi thường gặp | 604 |
 | `TIPS.vi.md` | 25 mẹo & advanced techniques | 652 |
-| `SOLUTIONS-INDEX.md` | Index 189 solutions | ~2000 |
 | `HUONG-DAN-CHAY-TESTCASE.md` | Chi tiết test workflow | 743 |
 
 **Strategy:** Reference (NO duplicate) - Load on-demand với `@file-refs`
@@ -276,6 +272,6 @@ type Solution<T> = ...
 
 ---
 
-**Version:** 1.0  
-**Last Updated:** 2025-12-17  
+**Version:** 1.0
+**Last Updated:** 2025-12-17
 **Status:** ✅ Production Ready

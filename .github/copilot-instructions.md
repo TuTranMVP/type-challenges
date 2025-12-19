@@ -31,7 +31,6 @@ applyTo: "**/*.{ts,md}"
 2. **@README.vi.md** - Setup & quick start
 3. **@FAQ.vi.md** - 25 Q&A thường gặp
 4. **@TIPS.vi.md** - 25 advanced tips & patterns
-5. **@SOLUTIONS-INDEX.md** - Index 189 solutions
 
 **Strategy:** Reference (NO duplicate content)
 
@@ -65,5 +64,5 @@ applyTo: "**/*.{ts,md}"
 
 ---
 
-**Version:** 1.0  
+**Version:** 1.0
 **Last Updated:** 2025-12-17

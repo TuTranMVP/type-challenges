@@ -40,7 +40,7 @@
 
     "track": {
       "description": "Track tiến độ và recommend next challenge",
-      "template": "Phân tích tiến độ: 1) Count completed challenges trong playground/*, 2) Analyze git history, 3) Tính metrics (completion rate, streak), 4) Recommend challenge tiếp theo dựa trên difficulty, 5) Update progress tracker. Reference @SOLUTIONS-INDEX.md.",
+      "template": "Phân tích tiến độ: 1) Count completed challenges trong playground/*, 2) Analyze git history, 3) Tính metrics (completion rate, streak), 4) Recommend challenge tiếp theo dựa trên difficulty, 5) Update progress tracker.",
       "agent": "coder",
       "subtask": false
     },

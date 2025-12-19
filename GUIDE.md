@@ -83,7 +83,6 @@ type-challenges/
     ├── README.vi.md
     ├── FAQ.vi.md
     ├── TIPS.vi.md
-    └── SOLUTIONS-INDEX.md
 ```
 
 ---
@@ -176,7 +175,7 @@ type MyExclude<T, U> = T extends U ? never : T
 
 **Tips:**
 - ✅ Đọc SOLUTION.vi.md để hiểu sâu
-- ✅ So sánh với solution khác trong @SOLUTIONS-INDEX.md
+- ✅ So sánh với solution khác
 - ✅ Practice lại với `/quiz` sau khi giải xong
 
 ---
@@ -335,7 +334,6 @@ A: Có! Dùng `as` clause: [K in keyof T as NewName]
 ## 📚 Resources
 - Review: @FAQ.vi.md Q13-16
 - Practice: `/quiz recursive-types`
-- Solutions: @SOLUTIONS-INDEX.md (filter by concept)
 ```
 
 **Tips:**
@@ -383,7 +381,7 @@ A: Có! Dùng `as` clause: [K in keyof T as NewName]
 ### 1. Performance (Tip 9)
 **Current:**
 \```typescript
-type ReplaceAll<S, From, To> = 
+type ReplaceAll<S, From, To> =
   S extends `${infer L}${From}${infer R}`
     ? `${L}${To}${ReplaceAll<R, From, To>}`
     : S
@@ -394,7 +392,7 @@ type ReplaceAll<S, From, To> =
 **Better:**
 \```typescript
 // Add tail recursion optimization
-type ReplaceAll<S, From, To, Acc = ""> = 
+type ReplaceAll<S, From, To, Acc = ""> =
   S extends `${infer L}${From}${infer R}`
     ? ReplaceAll<R, From, To, `${Acc}${L}${To}`>
     : `${Acc}${S}`
@@ -952,7 +950,7 @@ mkdir -p playground/{warm,easy,medium,hard,extreme}
   agent: coder
   ---
   # Your Command
-  
+
   Template: $1
   References: @file-refs
   Shell: !`bash commands`
@@ -993,7 +991,7 @@ mkdir -p playground/{warm,easy,medium,hard,extreme}
   - Retry sau 1 ngày
 
 **Q19: Community solutions ở đâu?**
-- A: https://tsch.js.org/{challenge-id}/solutions hoặc check SOLUTIONS-INDEX.md.
+- A: https://tsch.js.org/{challenge-id}/solutions.
 
 **Q20: Khi nào tôi "ready" cho extreme challenges?**
 - A: Khi:
@@ -1054,7 +1052,6 @@ Track your progress với metrics sau:
 - `README.vi.md` - Quick start, setup guide (394 lines)
 - `FAQ.vi.md` - 25 Q&A thường gặp (604 lines)
 - `TIPS.vi.md` - 25 mẹo & techniques (652 lines)
-- `SOLUTIONS-INDEX.md` - Index 189 solutions (~2000 lines)
 - `AGENTS.md` - AI Tutor brain (281 lines)
 
 ### **External Links**
@@ -1129,7 +1126,7 @@ Bạn giờ đã có:
 
 ---
 
-**Version:** 1.0  
-**Last Updated:** 2025-12-17  
-**Author:** OpenCode AI Tutor System  
+**Version:** 1.0
+**Last Updated:** 2025-12-17
+**Author:** OpenCode AI Tutor System
 **Status:** ✅ Production Ready

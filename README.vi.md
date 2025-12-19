@@ -117,8 +117,6 @@ Phần G: Practice Progression
 
 ---
 
-### **📑 [SOLUTIONS-INDEX.md](./SOLUTIONS-INDEX.md)**
-
 **Master index của 189 solutions (30KB)**
 
 Bao gồm:
@@ -141,7 +139,6 @@ type-challenges/
 ├── 📄 HUONG-DAN-CHAY-TESTCASE.md     ← Hướng dẫn chi tiết
 ├── ❓ FAQ.vi.md                        ← 25 câu hỏi
 ├── 💡 TIPS.vi.md                      ← 25 mẹo & kỹ thuật
-├── 📑 SOLUTIONS-INDEX.md              ← Index 189 solutions
 │
 ├── 📁 questions/
 │   ├── 00013-warm-hello-world/
@@ -346,7 +343,6 @@ F2              : Rename symbol
 | Date | Changes |
 |------|---------|
 | 2025-12-16 | Initial Vietnamese guides created (3 files, 1,999 lines) |
-| 2025-12-16 | Added SOLUTIONS-INDEX for all 189 challenges |
 | 2025-12-16 | Cleaned all non-English/Vietnamese files |
 
 ---
@@ -373,21 +369,19 @@ Nếu bạn thích project này:
 ┌─────────────────────────────────────────────┐
 │  Type Challenges Vietnamese Guide           │
 ├─────────────────────────────────────────────┤
-│ 📄 Quick Start                              │
-│ ↓                                           │
-│ 📖 HUONG-DAN (Main Guide)                   │
-│ ↓                                           │
-│ ❓ FAQ.vi (Q&A)                             │
-│ ↓                                           │
-│ 💡 TIPS.vi (Advanced)                       │
-│ ↓                                           │
-│ 🎮 Start Solving!                           │
-│ ↓                                           │
-│ 📑 SOLUTIONS-INDEX (Reference)              │
+│ 📄 Quick Start
+│ ↓
+│ 📖 HUONG-DAN (Main Guide)
+│ ↓
+│ ❓ FAQ.vi (Q&A)
+│ ↓
+│ 💡 TIPS.vi (Advanced)
+│ ↓
+│ 🎮 Start Solving!
 └─────────────────────────────────────────────┘
 ```
 
 ---
 
-**Last Updated:** 2025-12-16  
+**Last Updated:** 2025-12-16
 **Status:** ✅ Ready for use

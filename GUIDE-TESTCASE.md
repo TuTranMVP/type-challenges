@@ -81,7 +81,7 @@ pnpm generate
 
 # Terminal sẽ hỏi: chọn ngôn ngữ (English, Japanese, Korean, v.v.)
 # Chọn: English (hoặc ngôn ngữ bạn thích)
-# 
+#
 # Output:
 # ✅ Local playground generated at: /path/to/playground
 ```
@@ -126,7 +126,7 @@ Mở file `playground/warm/00013-warm-hello-world.ts` - bạn sẽ thấy:
 
   In Type Challenges, we use the type system itself to do the assertion.
 
-  For this challenge, you will need to change the following code to make 
+  For this challenge, you will need to change the following code to make
   the tests pass (no type check errors).
 
   ```ts
@@ -244,7 +244,7 @@ $ npx tsc --noEmit playground/warm/00013-warm-hello-world.ts
 ```bash
 $ npx tsc --noEmit playground/easy/00004-easy-pick.ts
 
-playground/easy/00004-easy-pick.ts:34:5 - error TS2322: Type 'any' is not 
+playground/easy/00004-easy-pick.ts:34:5 - error TS2322: Type 'any' is not
 assignable to type 'Pick<Todo, "title">'.
 
 34 type MyPick<T, K> = any
@@ -367,7 +367,7 @@ code playground/easy/00004-easy-pick.ts
   Constructs a type by picking the set of properties `K` from `T`
 
   For example:
-  
+
   interface Todo {
     title: string
     description: string
@@ -450,14 +450,14 @@ error TS2749: 'T' refers to a value, but is being used as a type here.
 // ❌ WRONG
 type MyType<T> = T + string  // T là type, không thể cộng như số
 
-// ✅ CORRECT  
+// ✅ CORRECT
 type MyType<T> = T extends string ? string : never
 ```
 
 #### **Error 3️⃣: Missing Property**
 
 ```
-error TS2741: Property 'title' is missing in type '{ }' 
+error TS2741: Property 'title' is missing in type '{ }'
 but required in type '{ title: string; }'.
 ```
 
@@ -663,7 +663,6 @@ pnpm generate
 |------|---------|
 | `README.md` | Giới thiệu chung |
 | `README.vi.md` | Bản Việt |
-| `SOLUTIONS-INDEX.md` | Index tất cả 189 solutions |
 | `FAQ.vi.md` | Câu hỏi thường gặp |
 | `TIPS.vi.md` | Mẹo advanced |
 | `.github/instructions/` | Rules and conventions |
