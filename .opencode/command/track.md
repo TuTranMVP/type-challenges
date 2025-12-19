@@ -25,5 +25,3 @@ Total: 189 (1 warm, 13 easy, 102 medium, 56 hard, 17 extreme)
 2. Analyze patterns: Đã master concepts nào?
 3. Recommend: Next challenge by difficulty
 4. Suggest: Learning path từ @TIPS.vi.md (Tip 21-25)
-
-**Reference:** @SOLUTIONS-INDEX.md cho full list
