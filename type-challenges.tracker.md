@@ -5,22 +5,15 @@ aliases:
   - Type Challenges Progress
   - Type System Practice
 type:
-  - knowledge
   - practice
   - challenges
-  - learning-platform
-  - tools
-  - project
   - tracker
 domain:
   - tech
   - programming
 level:
-  - beginner
   - intermediate
   - advanced
-  - expert
-  - master
 priority:
   - high
 maturity:
@@ -44,34 +37,6 @@ tags:
   - typescript
   - practice
   - tracker
-  - type-system
-  - learning
-  - project
-  - active
-  - high
-  - mature
-  - stable
-  - official
-  - beginner
-  - intermediate
-  - advanced
-  - expert
-# Custom Tracking Properties (Extended Metadata)
-project_type: practice-tracker
-start_date: 2025-11-18
-target_completion: 2026-02-18
-next_review: 2025-11-25
-total_challenges: 189
-completed: 0
-in_progress: 0
-completion_percentage: 0
-warmup_completed: 0
-easy_completed: 0
-medium_completed: 0
-hard_completed: 0
-extreme_completed: 0
-study_hours: 0
-current_streak: 0
 official_site: https://tsch.js.org/
 github_repo: https://github.com/type-challenges/type-challenges
 ---
@@ -80,25 +45,24 @@ github_repo: https://github.com/type-challenges/type-challenges
 
 | Level      | Total   | ✅ Done | 🔄 In Progress | ❌ Todo  | Progress |
 | ---------- | ------- | ------ | -------------- | ------- | -------- |
-| 🟢 Warm-up | 1       | 0      | 0              | 1       | 0%       |
-| 🟢 Easy    | 13      | 0      | 0              | 13      | 0%       |
+| 🟢 Warm-up | 1       | 1      | 0              | 1       | 100%     |
+| 🟢 Easy    | 13      | 1      | 0              | 12      | 7.69%    |
 | 🟡 Medium  | 103     | 0      | 0              | 103     | 0%       |
 | 🔴 Hard    | 55      | 0      | 0              | 55      | 0%       |
 | 🟣 Extreme | 17      | 0      | 0              | 17      | 0%       |
-| **TOTAL**  | **189** | **0**  | **0**          | **189** | **0%**   |
-
+| **TOTAL**  | **189** | **1**  | **0**          | **188** | **0.53%**   |
 ---
 
 ## 🟢 Warm-up (1 challenge)
 
-- [ ] [13・Hello World](https://tsch.js.org/13) - First challenge để làm quen
+- [x] [13・Hello World](https://tsch.js.org/13) - First challenge để làm quen
 
 ---
 
 ## 🟢 Easy (13 challenges)
 
 **Built-in Utilities:**
-- [ ] [4・Pick](https://tsch.js.org/4) - Implement Pick<T, K>
+- [x] [4・Pick](https://tsch.js.org/4) - Implement Pick<T, K>
 - [ ] [7・Readonly](https://tsch.js.org/7) - Implement Readonly<T>
 - [ ] [43・Exclude](https://tsch.js.org/43) - Implement Exclude<T, U>
 

@@ -1,15 +1,15 @@
 /*
   4 - Pick
   -------
-  by Anthony Fu (@antfu) #easy #union #built-in
+  bởi Anthony Fu (@antfu) #easy #union #built-in
 
-  ### Question
+  ### Câu hỏi
 
-  Implement the built-in `Pick<T, K>` generic without using it.
+  Hãy tự triển khai generic `Pick<T, K>` mà không sử dụng sẵn có.
 
-  Constructs a type by picking the set of properties `K` from `T`
+  Tạo ra một kiểu mới bằng cách chọn tập hợp các thuộc tính `K` từ `T`
 
-  For example:
+  Ví dụ:
 
   ```ts
   interface Todo {
@@ -26,12 +26,12 @@
   }
   ```
 
-  > View on GitHub: https://tsch.js.org/4
+  > Xem trên GitHub: https://tsch.js.org/4
 */
 
 /* _____________ Your Code Here _____________ */
 
-type MyPick<T, K> = any
+type MyPick<T, K extends keyof T> = { [P in K]: T[P] }
 
 /* _____________ Test Cases _____________ */
 import type { Equal, Expect } from '@type-challenges/utils'

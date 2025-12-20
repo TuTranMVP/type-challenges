@@ -5,6 +5,10 @@ level: warm-up
 source: type-challenges
 status: solved
 time-spent: "2min"
+type:
+  - challenge-solution
+domain:
+  - programming
 concepts:
   - "Type Aliases"
   - "Literal Types"
