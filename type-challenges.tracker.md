@@ -76,7 +76,6 @@ official_site: https://tsch.js.org/
 github_repo: https://github.com/type-challenges/type-challenges
 ---
 #  🎯 Type Challenges Progress Tracker
----
 ## 📊 Progress Overview
 
 | Level      | Total   | ✅ Done | 🔄 In Progress | ❌ Todo  | Progress |
