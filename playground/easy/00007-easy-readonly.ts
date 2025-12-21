@@ -42,3 +42,11 @@ interface Todo {
   title: string
   description: string
 }
+
+// let todo: MyReadonly<Todo> = {
+//   title: "Hey",
+//   description: "foobar"
+// }
+
+// todo.title = "Hello" // Error: cannot reassign attribute readonly
+// todo.description = "barFoo" // Error: cannot reassign attribute readonly
