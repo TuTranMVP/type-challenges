@@ -1,15 +1,13 @@
 /*
-  7 - Readonly
+  7.Readonly (only readonly properties)
   -------
-  by Anthony Fu (@antfu) #easy #built-in #readonly #object-keys
+  TonyT | bởi Anthony Fu (@antfu) #easy #built-in #readonly #object-keys
 
-  ### Question
+  ### Asktion
+  Tự triển khai generic `Readonly<T>` mà không dùng sẵn có.
+  Tạo một kiểu với tất cả thuộc tính của T đều là readonly, nghĩa là các thuộc tính này không thể gán lại giá trị.
 
-  Implement the built-in `Readonly<T>` generic without using it.
-
-  Constructs a type with all properties of T set to readonly, meaning the properties of the constructed type cannot be reassigned.
-
-  For example:
+  Ex:
 
   ```ts
   interface Todo {
@@ -22,36 +20,25 @@
     description: "foobar"
   }
 
-  todo.title = "Hello" // Error: cannot reassign a readonly property
-  todo.description = "barFoo" // Error: cannot reassign a readonly property
+  todo.title = "Hello" // Lỗi: không thể gán lại thuộc tính readonly
+  todo.description = "barFoo" // Lỗi: không thể gán lại thuộc tính readonly
   ```
-
-  > View on GitHub: https://tsch.js.org/7
+  ### Links
+  > Xem trên GitHub: https://tsch.js.org/7
 */
 
 /* _____________ Your Code Here _____________ */
 
-type MyReadonly<T> = any
+type MyReadonly<T> = { readonly [ K in keyof T ]: T[K] }
 
 /* _____________ Test Cases _____________ */
 import type { Equal, Expect } from '@type-challenges/utils'
 
 type cases = [
-  Expect<Equal<MyReadonly<Todo1>, Readonly<Todo1>>>,
+  Expect<Equal<MyReadonly<Todo>, Readonly<Todo>>>,
 ]
 
-interface Todo1 {
+interface Todo {
   title: string
   description: string
-  completed: boolean
-  meta: {
-    author: string
-  }
 }
-
-/* _____________ Further Steps _____________ */
-/*
-  > Share your solutions: https://tsch.js.org/7/answer
-  > View solutions: https://tsch.js.org/7/solutions
-  > More Challenges: https://tsch.js.org
-*/

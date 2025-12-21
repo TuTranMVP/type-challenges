@@ -1,15 +1,13 @@
 /*
-  4 - Pick
+  4.Pick (select properties)
   -------
-  bởi Anthony Fu (@antfu) #easy #union #built-in
+  TonyT | bởi Anthony Fu (@antfu) #easy #union #built-in
 
-  ### Câu hỏi
-
+  ### Asktion
   Hãy tự triển khai generic `Pick<T, K>` mà không sử dụng sẵn có.
-
   Tạo ra một kiểu mới bằng cách chọn tập hợp các thuộc tính `K` từ `T`
 
-  Ví dụ:
+  Ex:
 
   ```ts
   interface Todo {
@@ -57,10 +55,3 @@ interface Expected2 {
   title: string
   completed: boolean
 }
-
-/* _____________ Further Steps _____________ */
-/*
-  > Share your solutions: https://tsch.js.org/4/answer
-  > View solutions: https://tsch.js.org/4/solutions
-  > More Challenges: https://tsch.js.org
-*/
