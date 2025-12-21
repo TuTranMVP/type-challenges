@@ -46,11 +46,11 @@ github_repo: https://github.com/type-challenges/type-challenges
 | Level      | Total   | ✅ Done | 🔄 In Progress | ❌ Todo  | Progress |
 | ---------- | ------- | ------ | -------------- | ------- | -------- |
 | 🟢 Warm-up | 1       | 1      | 0              | 1       | 100%     |
-| 🟢 Easy    | 13      | 2      | 0              | 11      | 15.38%   |
+| 🟢 Easy    | 13      | 3      | 0              | 10      | 23.08%   |
 | 🟡 Medium  | 103     | 0      | 0              | 103     | 0%       |
 | 🔴 Hard    | 55      | 0      | 0              | 55      | 0%       |
 | 🟣 Extreme | 17      | 0      | 0              | 17      | 0%       |
-| **TOTAL**  | **189** | **2**  | **0**          | **187** | **1.06%**   |
+| **TOTAL**  | **189** | **3**  | **0**          | **186** | **1.59%**   |
 ---
 
 ## 🟢 Warm-up (1 challenge)
@@ -64,7 +64,7 @@ github_repo: https://github.com/type-challenges/type-challenges
 **Built-in Utilities:**
 - [x] [4・Pick](https://tsch.js.org/4) - Implement Pick<T, K>
 - [x] [7・Readonly](https://tsch.js.org/7) - Implement Readonly<T>
-- [ ] [43・Exclude](https://tsch.js.org/43) - Implement Exclude<T, U>
+- [x] [43・Exclude](https://tsch.js.org/43) - Implement Exclude<T, U>
 
 **Array/Tuple:**
 - [ ] [11・Tuple to Object](https://tsch.js.org/11) - Convert tuple to object

@@ -1,26 +1,24 @@
 /*
-  43 - Exclude
+  43.Exclude (để trừ bớt type khỏi union type)
   -------
-  by Zheeeng (@zheeeng) #easy #built-in #union
+  TonyT | bởi Zheeeng (@zheeeng) #easy #built-in #union
 
-  ### Question
+  ### Ask
+  Cài đặt lại utility type `Exclude<T, U>` có sẵn trong TypeScript
+  Loại bỏ khỏi `T` những kiểu mà có thể gán (assignable) cho `U`
 
-  Implement the built-in `Exclude<T, U>`
-
-  > Exclude from `T` those types that are assignable to `U`
-
-  For example:
+  Example:
 
   ```ts
   type Result = MyExclude<'a' | 'b' | 'c', 'a'> // 'b' | 'c'
   ```
 
-  > View on GitHub: https://tsch.js.org/43
+  > Xem trên GitHub: https://tsch.js.org/43
 */
 
 /* _____________ Your Code Here _____________ */
 
-type MyExclude<T, U> = any
+type MyExclude<T, U> = T extends U ? never : T // trừ bớt type khỏi union type
 
 /* _____________ Test Cases _____________ */
 import type { Equal, Expect } from '@type-challenges/utils'
@@ -31,9 +29,6 @@ type cases = [
   Expect<Equal<MyExclude<string | number | (() => void), Function>, string | number>>,
 ]
 
-/* _____________ Further Steps _____________ */
-/*
-  > Share your solutions: https://tsch.js.org/43/answer
-  > View solutions: https://tsch.js.org/43/solutions
-  > More Challenges: https://tsch.js.org
-*/
+type Result = MyExclude<'a' | 'b' | 'c', 'a'> // có ý nghĩa là 'b' | 'c' vì 'a' bị trừ đi
+
+// const result: Result = 'a'; // lỗi vì 'a' không thuộc 'b' | 'c'
