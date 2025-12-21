@@ -46,11 +46,11 @@ github_repo: https://github.com/type-challenges/type-challenges
 | Level      | Total   | ✅ Done | 🔄 In Progress | ❌ Todo  | Progress |
 | ---------- | ------- | ------ | -------------- | ------- | -------- |
 | 🟢 Warm-up | 1       | 1      | 0              | 1       | 100%     |
-| 🟢 Easy    | 13      | 3      | 0              | 10      | 23.08%   |
+| 🟢 Easy    | 13      | 4      | 0              | 9       | 30.77%   |
 | 🟡 Medium  | 103     | 0      | 0              | 103     | 0%       |
 | 🔴 Hard    | 55      | 0      | 0              | 55      | 0%       |
 | 🟣 Extreme | 17      | 0      | 0              | 17      | 0%       |
-| **TOTAL**  | **189** | **3**  | **0**          | **186** | **1.59%**   |
+| **TOTAL**  | **189** | **4**  | **0**          | **185** | **2.12%**   |
 ---
 
 ## 🟢 Warm-up (1 challenge)
@@ -67,7 +67,7 @@ github_repo: https://github.com/type-challenges/type-challenges
 - [x] [43・Exclude](https://tsch.js.org/43) - Implement Exclude<T, U>
 
 **Array/Tuple:**
-- [ ] [11・Tuple to Object](https://tsch.js.org/11) - Convert tuple to object
+- [x] [11・Tuple to Object](https://tsch.js.org/11) - Convert tuple to object
 - [ ] [14・First of Array](https://tsch.js.org/14) - Get first element
 - [ ] [18・Length of Tuple](https://tsch.js.org/18) - Get tuple length
 - [ ] [533・Concat](https://tsch.js.org/533) - Concatenate arrays
