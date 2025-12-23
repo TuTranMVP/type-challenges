@@ -20,8 +20,14 @@
 /* _____________ Your Code Here _____________ */
 
 type TupleToObject<T extends readonly any[]> = {
-  [K in T[number]]: K // K là type của key, cũng là value
+  [K in T[number]]: K // K là type của key, cũng là value | [Key]: K
 }
+
+// Giải thích:
+// Line 1: Ràng buộc T phải là một tuple/array readonly (T extends readonly any[])
+// Line 2: Sử dụng mapped type để lặp qua tất cả các phần tử K trong T (T[number] lấy tất cả các giá trị trong tuple)
+// Line 3: Đặt K làm key và value trong object mới
+// Key insight: Sử dụng indexed access type (T[number]) để lấy tất cả các giá trị từ tuple và tạo object từ chúng
 
 /* _____________ Test Cases _____________ */
 import type { Equal, Expect } from '@type-challenges/utils'

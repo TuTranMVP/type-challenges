@@ -31,6 +31,11 @@
 
 type MyReadonly<T> = { readonly [ K in keyof T ]: T[K] }
 
+// Giải thích:
+// Line 1: Sử dụng mapped type để lặp qua tất cả các key K trong T (keyof T)
+// Line 2: Thêm modifier readonly cho mỗi thuộc tính K và giữ nguyên kiểu của T[K]
+// Key insight: Kết hợp mapped types và keyof để tạo kiểu mới với tất cả thuộc tính là readonly
+
 /* _____________ Test Cases _____________ */
 import type { Equal, Expect } from '@type-challenges/utils'
 

@@ -31,6 +31,12 @@
 
 type MyPick<T, K extends keyof T> = { [P in K]: T[P] }
 
+// Giải thích:
+// Line 1: Ràng buộc K phải là tập hợp con của các key trong T (K extends keyof T)
+// Line 2: Sử dụng mapped type để tạo kiểu mới với các thuộc tính trong K
+// Line 3: Lấy kiểu của từng thuộc tính từ T bằng cách sử dụng T[P]
+// Key insight: Kết hợp mapped types và keyof để chọn thuộc tính một cách an toàn từ kiểu ban đầu T
+
 /* _____________ Test Cases _____________ */
 import type { Equal, Expect } from '@type-challenges/utils'
 
